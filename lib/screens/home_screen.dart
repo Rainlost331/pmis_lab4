@@ -3,6 +3,7 @@ import 'appointment_screen.dart';
 import 'contact_screen.dart';
 import 'note_screen.dart';
 import 'task_screen.dart';
+import 'minefield_screen.dart'; // Импортируем экран игры в сапера
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -50,6 +51,15 @@ class HomeScreen extends StatelessWidget {
                 );
               },
               child: Text('Manage Tasks'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MinefieldScreen()),
+                );
+              },
+              child: Text('Play Minesweeper'),
             ),
           ],
         ),
