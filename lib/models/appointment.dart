@@ -16,7 +16,6 @@ class Appointment {
     };
   }
 
-  // Создание объекта из Map
   factory Appointment.fromMap(Map<String, dynamic> map) {
     return Appointment(
       id: map['id'],
